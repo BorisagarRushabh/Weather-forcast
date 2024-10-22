@@ -1,66 +1,66 @@
-# Django Weather App
+# Weather Forecast
 
-This is a simple Django web application that provides weather information based on user input. It utilizes a weather API to fetch real-time weather data.
+A web application that provides real-time weather information for any location. Users can search for a city and get detailed weather data, including temperature, humidity, wind speed, and forecasts.
 
 ## Features
 
-- User-friendly interface for entering location details
-- Displays current weather conditions, temperature, and other relevant information
-- Responsive design for a seamless experience on different devices
+- Search for weather information by city name
+- Display current weather conditions
+- Show a 7-day weather forecast
+- Responsive design for both mobile and desktop
+- Option to display temperature in Celsius or Fahrenheit
 
-## Installation
+## Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript (Vanilla or Frameworks like React/Vue)
+- **Weather API**: OpenWeatherMap API or similar
+- **Deployment**: GitHub Pages or any static hosting service
+
+## Project Structure
+
+```
+weather-forecast/
+│
+├── index.html           # Main HTML file
+├── style.css            # Stylesheet for the app
+├── script.js            # JavaScript functionality
+└── README.md            # Project documentation
+```
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have a web browser installed (any modern browser will do).
+
+### Installation
 
 1. Clone the repository:
 
-   ```bash git clone https://github.com/your-username/Django-Weather-App.git ```
+   ```bash
+   git clone https://github.com/BorisagarRushabh/Weather-forcast.git
+   cd Weather-forcast
+   ```
 
-2. Navigate to the project directory:
+2. Open the `index.html` file in your browser:
 
-   ```bash cd Django-Weather-App ```
-   
-3. Install the required dependencies:
-   
-   ```bash pip install -r requirements.txt ```
+   - Right-click on `index.html` and choose "Open with" > "Your Browser".
+   - Alternatively, you can deploy it on any static hosting platform or use GitHub Pages for live use.
 
-4. Apply database migrations:
+### Usage
 
-  ```bash python manage.py migrate ```
-  
-5. Run the development server:
+1. Open the application in your browser.
+2. Enter a city name in the search bar.
+3. Click the "Get Weather" button to retrieve the current weather and forecast.
+4. View the displayed weather information and forecast data.
 
-  ```bash python manage.py runserver ```
-The app will be accessible at http://127.0.0.1:8000/.
+## Future Improvements
 
-Configuration
-Open weatherapp/settings.py and add your API key in the WEATHER_API_KEY variable.
-Usage
-Access the application in your web browser.
-Enter the location details (e.g., city name) in the provided form.
-Click the "Get Weather" button to fetch and display the weather information.
-Screenshots
-Include screenshots or GIFs to showcase the application's functionality.
+- Add user location detection to provide weather data automatically.
+- Implement caching for previously searched cities.
+- Enhance the UI with animations and improved design.
+- Add options for different weather data (e.g., UV index, air quality).
 
-Technologies Used
-Django
-HTML
-CSS
-Weather API (mention the specific API you are using)
-Contributing
-If you'd like to contribute to this project, please follow these guidelines.
+## Contributing
 
-Fork the repository.
-Create a new branch: 
-
-```bash
-git checkout -b feature/your-feature-name
-```
-Commit your changes: 
-```bash 
-git commit -m 'Add new feature' 
-```
-
-Push to the branch: 
-```bash 
-git push origin feature/your-feature-name
-```
-Submit a pull request.
+Contributions are welcome! Feel free to submit issues or pull requests to improve the project.
